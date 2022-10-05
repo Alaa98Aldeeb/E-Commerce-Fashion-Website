@@ -43,6 +43,7 @@ body{
 }
 .right .priceDetails button, .right .priceDetails p{
     display: inline-block;
+    vertical-align: top;
 }
 .right .priceDetails button{
     width: 40px;

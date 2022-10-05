@@ -4,7 +4,6 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     transition: all ease-in-out .3s;
-    overflow-x: hidden;
 }
 html{
     scroll-behavior: smooth;
@@ -14,7 +13,7 @@ header{
     margin-left: auto;
     margin-right: auto;
     margin-top: 2%;
-    overflow-x: hidden;
+    height: 1000px;
 }
 header nav{
     width: 100%;
@@ -109,6 +108,7 @@ header .headerBack .headerContainer button{
     border-radius: 5px;
     margin-left: 20%;
     margin-top: 5%;
+    margin-bottom: 20px;
     cursor: pointer;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
@@ -379,6 +379,9 @@ header .headerBack .headerContainer button{
         margin-right: auto;
         margin-left: auto;
     }
+    header .headerBack .headerContainer button{
+        margin-bottom: 20px;
+    }
     #about{
         width: 80%;
         height: 1000px;
@@ -604,7 +607,7 @@ header .headerBack .headerContainer button{
     }
     header .headerBack{
         width: 100%;
-        height: 550px;
+        height: 700px;
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -624,5 +627,8 @@ header .headerBack .headerContainer button{
         margin-right: auto;
         margin-left: auto;
         margin-top: 20px;
+    }
+    header .headerBack .headerContainer button{
+        margin-bottom: 20px;
     }
 }
