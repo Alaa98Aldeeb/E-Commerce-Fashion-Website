@@ -1,0 +1,408 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fashionPagesStyle.css">
+    <link rel="shortcut icon" href="fashion.webp" type="image/x-icon">
+    <style>
+        header {
+            background: rgb(177, 3, 133);
+            opacity: .8;
+        }
+
+        header .headerImg img {
+            opacity: .8;
+        }
+
+        header .headerParagraph {
+            top: 2%;
+            left: 12%;
+            color: #000;
+            opacity: 1;
+            font-weight: 600;
+        }
+
+        header .headerParagraph #sale {
+            background: rgb(17, 0, 58);
+            color: #fff;
+            font-weight: normal;
+            font-size: 28px;
+        }
+
+        .orderStages div {
+            background: rgb(109, 1, 82);
+        }
+
+        .orderStages .stage {
+            background: rgb(156, 125, 148);
+        }
+        #contact{
+            background: rgb(68, 0, 51);
+            opacity: .8;
+            color: rgb(250, 228, 228);
+        }
+        #contact div p{
+            color: #fff
+        }
+        #contact .contactChannel form button{
+            background: #000
+        }
+    </style>
+    <title>Kara Fashion</title>
+</head>
+
+<body>
+    <header>
+        <div class="headerImg">
+            <img src="images/children/removemom.png" alt="">
+        </div>
+        <div class="headerParagraph">
+            <p>kara fashion <br> for children</p>
+            <p id="sale">70% sale</span>
+        </div>
+
+    </header>
+    <div class="tabs">
+        <button id="firstTab" onclick="displayFirstOnle('rgb(177, 3, 133)',0,0)">clothes</button>
+        <button id="secondTab" onclick="displaySecondOnle('rgb(177, 3, 133)',0,0)">shoses</button>
+    </div>
+    <div id="first">
+        <div class="container">
+            <div class="product">
+                <img src="images/children/chil1.png" alt="" srcset="" onclick="sendImageProd(this.src)">
+                <img src="ratstars.png" alt="" srcset="" id="rating">
+                <p class="total">total: 80.00$</p>
+                <p class="sale">120.00</p>
+            </div>
+            <div class="product">
+                <img src="images/children/chil2.png" alt="" srcset="" onclick="sendImageProd(this.src)">
+                <img src="ratstars.png" alt="" srcset="" id="rating">
+                <p class="total">total: 80.00$</p>
+                <p class="sale">120.00</p>
+            </div>
+            <div class="product">
+                <img src="images/children/chil3.png" alt="" srcset="" onclick="sendImageProd(this.src)">
+                <img src="ratstars.png" alt="" srcset="" id="rating">
+                <p class="total">total: 80.00$</p>
+                <p class="sale">120.00</p>
+            </div>
+            <div class="product">
+                <img src="images/children/chil4.png" alt="" srcset="" onclick="sendImageProd(this.src)">
+                <img src="ratstars.png" alt="" srcset="" id="rating">
+                <p class="total">total: 80.00$</p>
+                <p class="sale">120.00</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="product">
+                <img src="images/children/chil5.png" alt="" srcset="" onclick="sendImageProd(this.src)">
+                <img src="ratstars.png" alt="" srcset="" id="rating">
+                <p class="total">total: 80.00$</p>
+                <p class="sale">120.00</p>
+            </div>
+            <div class="product">
+                <img src="images/children/chil6.png" alt="" srcset="" onclick="sendImageProd(this.src)">
+                <img src="ratstars.png" alt="" srcset="" id="rating">
+                <p class="total">total: 80.00$</p>
+                <p class="sale">120.00</p>
+            </div>
+            <div class="product">
+                <img src="images/children/chil7.png" alt="" srcset="" onclick="sendImageProd(this.src)">
+                <img src="ratstars.png" alt="" srcset="" id="rating">
+                <p class="total">total: 80.00$</p>
+                <p class="sale">120.00</p>
+            </div>
+            <div class="product">
+                <img src="images/children/chil8.png" alt="" srcset="" onclick="sendImageProd(this.src)">
+                <img src="ratstars.png" alt="" srcset="" id="rating">
+                <p class="total">total: 80.00$</p>
+                <p class="sale">120.00</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="product">
+                <img src="images/children/chil9.png" alt="" srcset="" onclick="sendImageProd(this.src)">
+                <img src="ratstars.png" alt="" srcset="" id="rating">
+                <p class="total">total: 80.00$</p>
+                <p class="sale">120.00</p>
+            </div>
+            <div class="product">
+                <img src="images/children/chil10.png" alt="" srcset="" onclick="sendImageProd(this.src)">
+                <img src="ratstars.png" alt="" srcset="" id="rating">
+                <p class="total">total: 80.00$</p>
+                <p class="sale">120.00</p>
+            </div>
+            <div class="product">
+                <img src="images/children/chil11.png" alt="" srcset="" onclick="sendImageProd(this.src)">
+                <img src="ratstars.png" alt="" srcset="" id="rating">
+                <p class="total">total: 80.00$</p>
+                <p class="sale">120.00</p>
+            </div>
+            <div class="product">
+                <img src="images/children/chil12.png " alt="" srcset="" onclick="sendImageProd(this.src)">
+                <img src=" ratstars.png" alt="" srcset="" id="rating">
+                <p class="total">total: 80.00$</p>
+                <p class="sale">120.00</p>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="product">
+                <img src="images/children/chil13.png" alt="" srcset="" onclick="sendImageProd(this.src)">
+                <img src="ratstars.png" alt="" srcset="" id="rating">
+                <p class="total">total: 80.00$</p>
+                <p class="sale">120.00</p>
+            </div>
+            <div class="product">
+                <img src="images/children/chil14.png" alt="" srcset="" onclick="sendImageProd(this.src)">
+                <img src="ratstars.png" alt="" srcset="" id="rating">
+                <p class="total">total: 80.00$</p>
+                <p class="sale">120.00</p>
+            </div>
+            <div class="product">
+                <img src="images/children/chil15.png" alt="" srcset="" onclick="sendImageProd(this.src)">
+                <img src="ratstars.png" alt="" srcset="" id="rating">
+                <p class="total">total: 80.00$</p>
+                <p class="sale">120.00</p>
+            </div>
+            <div class="product">
+                <img src="images/children/chil16.png" alt="" srcset="" onclick="sendImageProd(this.src)">
+                <img src="ratstars.png" alt="" srcset="" id="rating">
+                <p class="total">total: 80.00$</p>
+                <p class="sale">120.00</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="product">
+                <img src="images/children/chil17.png" alt="" srcset="" onclick="sendImageProd(this.src)">
+                <img src="ratstars.png" alt="" srcset="" id="rating">
+                <p class="total">total: 80.00$</p>
+                <p class="sale">120.00</p>
+            </div>
+            <div class="product">
+                <img src="images/children/chil18.png" alt="" srcset="" onclick="sendImageProd(this.src)">
+                <img src="ratstars.png" alt="" srcset="" id="rating">
+                <p class="total">total: 80.00$</p>
+                <p class="sale">120.00</p>
+            </div>
+            <div class="product">
+                <img src="images/children/chil19.png" alt="" srcset="" onclick="sendImageProd(this.src)">
+                <img src="ratstars.png" alt="" srcset="" id="rating">
+                <p class="total">total: 80.00$</p>
+                <p class="sale">120.00</p>
+            </div>
+            <div class="product">
+                <img src="images/children/chil20.png" alt="" srcset="" onclick="sendImageProd(this.src)">
+                <img src="ratstars.png" alt="" srcset="" id="rating">
+                <p class="total">total: 80.00$</p>
+                <p class="sale">120.00</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="product">
+                <img src="images/children/chil21.png" alt="" srcset="" onclick="sendImageProd(this.src)">
+                <img src="ratstars.png" alt="" srcset="" id="rating">
+                <p class="total">total: 80.00$</p>
+                <p class="sale">120.00</p>
+            </div>
+            <div class="product">
+                <img src="images/children/chil22.png" alt="" srcset="" onclick="sendImageProd(this.src)">
+                <img src="ratstars.png" alt="" srcset="" id="rating">
+                <p class="total">total: 80.00$</p>
+                <p class="sale">120.00</p>
+            </div>
+            <div class="product">
+                <img src="images/children/chil23.png" alt="" srcset="" onclick="sendImageProd(this.src)">
+                <img src="ratstars.png" alt="" srcset="" id="rating">
+                <p class="total">total: 80.00$</p>
+                <p class="sale">120.00</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="second">
+        <div class="container">
+            <div class="product">
+                <img src="images/children/shos1.png" alt="" srcset="" onclick="sendImageProd(this.src)">
+                <img src="ratstars.png" alt="" srcset="" id="rating">
+                <p class="total">total: 80.00$</p>
+                <p class="sale">120.00</p>
+            </div>
+            <div class="product">
+                <img src="images/children/shos2.png" alt="" srcset="" onclick="sendImageProd(this.src)">
+                <img src="ratstars.png" alt="" srcset="" id="rating">
+                <p class="total">total: 80.00$</p>
+                <p class="sale">120.00</p>
+            </div>
+            <div class="product">
+                <img src="images/children/shos3.png" alt="" srcset="" onclick="sendImageProd(this.src)">
+                <img src="ratstars.png" alt="" srcset="" id="rating">
+                <p class="total">total: 80.00$</p>
+                <p class="sale">120.00</p>
+            </div>
+            <div class="product">
+                <img src="images/children/shos4.png" alt="" srcset="" onclick="sendImageProd(this.src)">
+                <img src="ratstars.png" alt="" srcset="" id="rating">
+                <p class="total">total: 80.00$</p>
+                <p class="sale">120.00</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="product">
+                <img src="images/children/shos5.png" alt="" srcset="" onclick="sendImageProd(this.src)">
+                <img src="ratstars.png" alt="" srcset="" id="rating">
+                <p class="total">total: 80.00$</p>
+                <p class="sale">120.00</p>
+            </div>
+            <div class="product">
+                <img src="images/children/shos6.png" alt="" srcset="" onclick="sendImageProd(this.src)">
+                <img src="ratstars.png" alt="" srcset="" id="rating">
+                <p class="total">total: 80.00$</p>
+                <p class="sale">120.00</p>
+            </div>
+            <div class="product">
+                <img src="images/children/shos7.png" alt="" srcset="" onclick="sendImageProd(this.src)">
+                <img src="ratstars.png" alt="" srcset="" id="rating">
+                <p class="total">total: 80.00$</p>
+                <p class="sale">120.00</p>
+            </div>
+            <div class="product">
+                <img src="images/children/shos8.png" alt="" srcset="" onclick="sendImageProd(this.src)">
+                <img src="ratstars.png" alt="" srcset="" id="rating">
+                <p class="total">total: 80.00$</p>
+                <p class="sale">120.00</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="product">
+                <img src="images/children/shos9.png" alt="" srcset="" onclick="sendImageProd(this.src)">
+                <img src="ratstars.png" alt="" srcset="" id="rating">
+                <p class="total">total: 80.00$</p>
+                <p class="sale">120.00</p>
+            </div>
+            <div class="product">
+                <img src="images/children/shos10.png" alt="" srcset="" onclick="sendImageProd(this.src)">
+                <img src="ratstars.png" alt="" srcset="" id="rating">
+                <p class="total">total: 80.00$</p>
+                <p class="sale">120.00</p>
+            </div>
+            <div class="product">
+                <img src="images/children/shos11.png" alt="" srcset="" onclick="sendImageProd(this.src)">
+                <img src="ratstars.png" alt="" srcset="" id="rating">
+                <p class="total">total: 80.00$</p>
+                <p class="sale">120.00</p>
+            </div>
+            <div class="product">
+                <img src="images/children/shos12.png" alt="" srcset="" onclick="sendImageProd(this.src)">
+                <img src="ratstars.png" alt="" srcset="" id="rating">
+                <p class="total">total: 80.00$</p>
+                <p class="sale">120.00</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="product">
+                <img src="images/children/shos13.png" alt="" srcset="" onclick="sendImageProd(this.src)">
+                <img src="ratstars.png" alt="" srcset="" id="rating">
+                <p class="total">total: 80.00$</p>
+                <p class="sale">120.00</p>
+            </div>
+            <div class="product">
+                <img src="images/children/shos14.png" alt="" srcset="" onclick="sendImageProd(this.src)">
+                <img src="ratstars.png" alt="" srcset="" id="rating">
+                <p class="total">total: 80.00$</p>
+                <p class="sale">120.00</p>
+            </div>
+            <div class="product">
+                <img src="images/children/shos15.png" alt="" srcset="" onclick="sendImageProd(this.src)">
+                <img src="ratstars.png" alt="" srcset="" id="rating">
+                <p class="total">total: 80.00$</p>
+                <p class="sale">120.00</p>
+            </div>
+            <div class="product">
+                <img src="images/children/shos16.png" alt="" srcset="" onclick="sendImageProd(this.src)">
+                <img src="ratstars.png" alt="" srcset="" id="rating">
+                <p class="total">total: 80.00$</p>
+                <p class="sale">120.00</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="salScale">
+        <div class="salContainer">
+            <p>70% Sale Offers and More Just For You</p>
+            <button>shop now</button>
+        </div>
+
+    </div>
+
+    <div class="someDesc">
+        <p id="firstDesc">kara where you will find all you want</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur mollitia libero labore cupiditate optio
+            repellat quasi reiciendis molestias, velit neque distinctio quam itaque, fuga voluptas! Sapiente est officia
+            animi incidunt magnam perspiciatis dolorum quod voluptatum cupiditate quidem. Atque veniam quae consequuntur
+            architecto quam, aut rerum non, voluptas sed, eveniet debitis.</p>
+    </div>
+
+    <div class="orderStages">
+        <div class="stage"><img src="order.png" alt="make an order" srcset="">
+            <p>make your order</p></div><div class="stageMiddle"><img src="cart.png" alt="make an order" srcset="">
+            <p>add to your cart</p></div><div class="stage"><img src="deliver.png" alt="make an order" srcset="">
+            <p>finally get your ordere where you are!</p></div>
+    </div>
+
+    <footer id="contact">
+        <div class="windows">
+            <p>our website</p>
+            <ul>
+                <li>home</li>
+                <li>about us</li>
+                <li>products</li>
+                <li>contact</li>
+            </ul>
+        </div>
+        <div class="categ">
+            <p>our category</p>
+            <ul>
+                <li>women fashion</li>
+                <li>man fashion</li>
+                <li>children fashion</li>
+                <li>sports fashion</li>
+            </ul>
+        </div>
+        <div class="contactChannel">
+            <p>contact us</p>
+            <form action="" method="get">
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+                <textarea name="message" id="messageBox" placeholder="Message"></textarea>
+                <button>send</button>
+            </form>
+        </div>
+        <br>
+        <img src="facebook.png" alt="" srcset="">
+        <img src="twitter.png" alt="" srcset="">
+        <img src="instagram.png" alt="" srcset="">
+    </footer>
+    <script src="tabsEvents.js"></script>
+    <script>
+        window.onload = function () {
+            tab1.style.color = 'rgb(177, 3, 133)';
+            tab1.style.borderBottom = '1px solid rgb(177, 3, 133)';
+            div1.style.display = 'inline-block';
+            div2.style.display = 'none';
+        }
+    </script>
+
+</body>
+
+</html>

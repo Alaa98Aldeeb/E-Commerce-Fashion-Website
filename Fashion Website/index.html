@@ -1,0 +1,158 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="indexStyle.css">
+    <link rel="shortcut icon" href="fashion.webp" type="image/x-icon">
+    <title>Home Page</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li id="fashionLogo">fashion</li>
+                <li><a href="#">home</a></li>
+                <li><a href="#about">about us</a></li>
+                <li><a href="#product">products</a></li>
+                <li><a href="#contact">contact</a></li>
+                <button>login</button>
+            </ul>
+        </nav>
+        <div class="headerBack">
+            <img src="women1.png" alt="shopping"> 
+            <div class="headerContainer">
+                <p id="title">find the best fashion style for you</p><br>
+                <p id="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae quae laborum vitae quos dolor qui ullam quod quisquam molestiae neque suscipit porro impedit id voluptatum fugiat sapiente possimus libero perferendis!</p>
+                <button>start journy</button>
+            </div>
+            
+        </div>
+    </header>
+
+    <p id="categTitle">our category</p>
+    <div class="category">
+        <div class="adultCateg">
+            <img src="clothes (1).png" alt="">
+            <p>Women and Men Fashion</p>
+        </div>
+        <div class="childCateg">
+            <img src="children (1).png" alt="">
+            <p>Children Fashion</p>
+        </div>
+        <div class="shoseCateg">
+            <img src="shoes (1).png" alt="">
+            <p>Sports Fashion</p>
+        </div>
+    </div>
+
+    <div id="about">
+        <p id="aboutTitle">about us</p>
+        <div class="aboutContainer">
+            <div class="image"><img src="women.png" alt="" srcset=""></div><div class="aboutDesc">
+                <p id="karaTitle">kara fashion</p>
+                <p>at kara fashion we always show you latest fashion design samples and clothes to suit you in different occasion. <br>with good salary than others and easy way to deliver your shop cart order at any place and in good time. you can now go and search what you want and just click you will get all you want</p></div></div>
+    </div>
+
+    <div class="mostSal">
+        <p class="mostSalTite">the best seller</p>
+        <div class="man">
+            <img src="1.webp" alt="" class="imageRating" onclick="sendImageProd(this.src)">
+            <img src="rating2.png" alt="" class="ratingStart">
+            <p class="salVal"><span>Total: 100$</span><br>women category fashion style from Kara fashion</p>
+            
+        </div>
+        <div class="women">
+            <img src="2.webp" alt=""  class="imageRating" onclick="sendImageProd(this.src)">
+            <img src="rating2.png" alt="" class="ratingStart">
+            <p class="salVal"><span>Total: 200$</span><br>women category fashion style from Kara fashion</p>
+        </div>
+        <div class="sports">
+            <img src="3.webp" alt=""  class="imageRating" onclick="sendImageProd(this.src)">
+            <img src="rating2.png" alt="" class="ratingStart">
+            <p class="salVal"><span>Total: 80$</span><br>women category fashion style from Kara fashion</p>
+        </div>
+        <div class="sports">
+            <img src="4.webp" alt=""  class="imageRating" onclick="sendImageProd(this.src)">
+            <img src="rating2.png" alt="" class="ratingStart">
+            <p class="salVal"><span>Total: 80$</span><br>women category fashion style from Kara fashion</p>
+        </div>
+    </div>
+
+    <div id="product">
+        <p id="productTitle">our products</p>
+        <div class="prodOne">
+            <img src="images/men/men.jpg" alt="man fashion" srcset="">
+            <div class="overlay">
+                <div class="content">
+                    <button><a href="manPage.html">view more</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="prodTwo">
+            <img src="images/women/women.jpg" alt="man fashion" srcset="">
+            <div class="overlay">
+                <div class="content">
+                    <button><a href="womenPage.html">view more</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="prodThree">
+            <img src="images/children/chi.jpg" alt="man fashion" srcset="">
+            <div class="overlay">
+                <div class="content">
+                    <button><a href="childPage.html">view more</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="prodFour">
+            <img src="images/Shoe/sports.webp" alt="man fashion" srcset="">
+            <div class="overlay">
+                <div class="content">
+                    <button><a href="sportsPage.html">view more</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="contact">
+        <div class="tabs">
+            <p>our website</p>
+            <ul>
+                <li>home</li>
+                <li>about us</li>
+                <li>products</li>
+                <li>contact</li>
+            </ul>
+        </div>
+        <div class="categ">
+            <p>our category</p>
+            <ul>
+                <li>women fashion</li>
+                <li>man fashion</li>
+                <li>children fashion</li>
+                <li>sports fashion</li>
+            </ul>
+        </div>
+        <div class="contactChannel">
+            <p>contact us</p>
+            <form action="" method="get">
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+                <textarea name="message" id="messageBox" placeholder="Message"></textarea>
+                <button>send</button>
+            </form>
+        </div>
+        <br>
+        <img src="facebook.png" alt="" srcset="">
+        <img src="twitter.png" alt="" srcset="">
+        <img src="instagram.png" alt="" srcset="">
+    </footer>
+    <script>
+        function sendImageProd(src){
+        localStorage.setItem('imageProd', src);
+        window.location.href='productDetails.html';
+    }
+    </script>
+</body>
+</html>
